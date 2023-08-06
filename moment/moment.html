@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="moment.js"></script>
+    </head>
+
+    <body>
+
+        <div class="jumbotron text-center">
+            <h1>Moment Js</h1>
+        </div>
+        
+        <div class="container">
+
+        </div>
+
+        <script>
+            let date = moment('01/12/2016').format('Y-MM-DD')
+            console.log(date) // 2016-01-12
+
+            date = moment('01/12/2016').format('Y-MMM-DD')
+            console.log(date) // 2016-Jan-12
+
+            date = moment('01/12/2016').format('Y-MMMM-DD')
+            console.log(date) // 2016-January-12
+
+            date = moment(new Date()).format("Y-MM-DD");
+            console.log(date) // 2023-08-06
+
+            date = moment(new Date()).format("Y-MM-ddd");
+            console.log(date) // 2023-08-Sun
+
+            date = moment(new Date()).format("Y-MM-dddd");
+            console.log(date) // 2023-08-Sunday
+
+            date = moment(new Date()).add(1, 'day').format("Y-MM-DD");
+            console.log(date) // 2023-08-07
+
+            date = moment(new Date()).add(1, 'month').format("Y-MM-DD");
+            console.log(date) // 2023-09-06
+
+            date = moment(new Date()).add(1, 'year').format("Y-MM-DD");
+            console.log(date) // 2024-08-06
+
+            date = moment(new Date()).add(-1, 'year').format("Y-MM-DD");
+            console.log(date) // 2022-08-06
+
+            date = moment(new Date()).format("Y-MM-DD hh:mm:ss a");
+            console.log(date) // 2023-08-06 10:12:54 pm
+
+            date = moment(new Date()).format("Y-MM-DD hh:mm:ss A");
+            console.log(date) // 2023-08-06 10:12:54 PM
+
+            date = moment(new Date()).format("Y-MM-DD HH:mm:ss");
+            console.log(date) // 2023-08-06 10:12:54
+
+        </script>
+    </body>
+</html>
